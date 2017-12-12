@@ -2,14 +2,104 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Carrusel jQuery</title>
+  <!-- CDN Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- My stylesheet -->
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  
-	
+  <div class="container">
+    <div class="row">
+      <head>
+        <h1 class="slider-title text-center col-md-12">Cosmos</h1>
+    	</head>
+    </div>
+
+    <div class="row">
+      <section id="slider-container col-md-12">
+        <ul id="slider" class="slider-wrapper text-center">
+          <li class="slide-current">
+            <img src="assets/img/Cosmos.jpg" alt="Cosmos 1">
+            <div class="caption">
+              <h3 class="caption-title">
+                Diseño Web
+              </h3>
+              <p class="hidden-xs hidden-sm">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <img src="assets/img/cosmos2.jpg" alt="Cosmos 2">
+            <div class="caption">
+              <h3 class="caption-title">
+                Diseño Web
+              </h3>
+              <p class="hidden-xs hidden-sm">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <img src="assets/img/maxresdefault.jpg" alt="Cosmos 3">
+            <div class="caption">
+              <h3 class="caption-title">
+                Diseño Web
+              </h3>
+              <p class="hidden-xs hidden-sm">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <img src="assets/img/cosmos4.jpg" alt="Cosmos 4">
+            <div class="caption">
+              <h3 class="caption-title">
+                Diseño Web
+              </h3>
+              <p class="hidden-xs hidden-sm">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+      <!-- cada circulo para seleccionar la imagen que queramos -->
+      <ol class="move">
+        <!-- 4 circulos -->
+        <li><span class="fa fa-circle"></span></li>
+        <li><span class="fa fa-circle"></span></li>
+        <li><span class="fa fa-circle"></span></li>
+        <li><span class="fa fa-circle"></span></li>
+
+      </ol>
+      <!-- Flecha izquierda -->
+      <div class="left">
+        <span class="fa fa-chevron-left"></span>
+      </div>
+
+      <!-- Flecha derecha -->
+      <div class="right">
+        <span class="fa fa-chevron-right"></span>
+      </div>
+
+  </div>
+
+  <!-- Script de jQuery -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- Script de Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Font awesome -->
+  <script src="https://use.fontawesome.com/4db2d1a00b.js"></script>
+  <!-- My script -->
   <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>
