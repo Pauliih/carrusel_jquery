@@ -1,3 +1,8 @@
+/* 
+color: #2AB7A9; 
+background-color: #424242;
+*/
+
 body{
   background-color: #424242;
   color: #2AB7A9;
@@ -10,35 +15,83 @@ ul, ol{
 
 .slider-title{
   margin: 1em auto;
-  color: #fff;
   font-weight: 600;
+  font-size: 4em;
 }
 /* ________________________________*/
 
-
-/*
-.caption{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0,0,0,0.6);
-  padding: 12px;
+#slider-container{
+  position: relative;
 }
-*/
+
 li img{
   max-width: 100%;
 }
 
-.caption-title{
-  color: #2AB7A9;
-  font-weight: 700;
-  font-size: 1.6em;
-  margin-bottom: 10px;
+ol li{
+  display: inline-block;
+}
+
+.caption{
+  position: absolute;
+  width: 100%;
+  margin-top: 22%;
+  height: 40%;
+  top: 0;
+  left: 0;
+  display: flex; /* para centrarlo */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  
+  /* background-color: rgba(0,0,0,0.5); */
+  color: #fff;
+}
+ul li{
+  width: 100%;
+}
+
+.caption h3{
+  font-size: 3.5em;
+  color: #2AB7A9; 
 }
 
 .caption p{
-  color: #fff;
-  font-size: 1.4em;
-  line-height: 1.3em;
+  font-size: 1.3em;
 }
+
+.move{
+  position: absolute;
+  top: 102%;
+  display: flex;
+  justify-content: center;
+}
+
+.move li{
+  font-size: 1.5em;
+  margin:2px 5px;
+  cursor: pointer;
+}
+
+
+.left, .right{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  color: #fff;
+  font-size: 2em;
+}
+
+.left{
+  left: 5em;
+}
+
+.right{
+  right: 5em; 
+}
+
